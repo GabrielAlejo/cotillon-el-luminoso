@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: linear-gradient(to right, white, #C15CB9);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li a {
+    display: block;
+    padding: 12px;
+    transition-duration: 0.2s;
+}
+
+header nav li a:hover {
+    background-color: #ff00d4;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* gds */
+
+.sombra__violetaTexto {
+    text-shadow: 0px 0px 5px #ff00d4;
+}
+
+.sombra__verdeTexto {
+    text-shadow: 0px 0px 5px #5eff00;
+}
+
+.sombra__rojaCaja {
+    box-shadow: 0px 0px 5px #CB2121;
+}
+
+.general__titulo {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 16px;
+}
+
+.productos__tarjeta {
+    width: 250px;
+    display: inline-block;
+}
+
+.productos__foto {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.productos__info {
+    text-align: center;
+    color: white;
+    padding: 5px 0px 5px 5px;
+}
+
+.productos__boton {
+    margin-top: 4px;
+}
+
+.boton {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    box-shadow: 0px 0px 5px #0000ff;
+}
+
+.boton:hover {
+    background-color: #ff00d4;
+    color: black;
+    box-shadow: 0px 0px 5px #ff0000;
+}
+
+.videoInicio {
+    width: 100%;
+}
+
+footer {
+    margin-top: 16px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__tituloFoto {
+    color: white;
+}
+
+.footer__tituloFoto img {
+    margin-top: 16px;
+}
+
+.footer__info {
+    color: white;
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor {
+    margin-bottom: 16px;
+}
+
+.contenedor__titulo {
+    background-color: black;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+}
+
+.contenedor__cuerpo {
+    background: #ccc;
+    padding: 10px;
+}
+
+.contenedor__pie {
+    background-color: #303030;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.contenedor__center {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor__cuerpoFinal {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.contenedor__cuerpo ol li {
+    list-style: inside;
+}
+
+.contenedor__corto {
+    width: 100%;
+}
+
+.maps {
+    border: none;
+    width: 100%;
+    height: 350px;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 16px;
+}
+
+.contacto__campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    margin-bottom: 8px;
+}
+
+.contacto input,
+select,
+textarea {
+    margin-bottom: 8px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #111;
+    border-radius: 5px;
+}
