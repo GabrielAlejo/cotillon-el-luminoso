@@ -1,54 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../resources/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/nuevostyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Productos - El luminoso</title>
 </head>
 
-<body>
+<body class="grid__container">
     <header>
-        <div class="header__logo">
-            <a href="index.html"><img src="../resources/logo-violeta.png" alt="Logo del cotillon" width="40px"></a>
+        <div class="header__logo" data-aos="zoom-in">
+            <a href="../index.html"><img src="../resources/logo-violeta.png" alt="Logo del cotillon"></a>
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="productos.html"><i class="fa-solid fa-umbrella"></i> Productos</a></li>
-                <li><a href="promociones.html"><i class="fa-solid fa-money-bill-1-wave"></i> Promociones</a>
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i> Inicio
+                    </a>
                 </li>
-                <li><a href="preguntas-frecuentes.html"><i class="fa-solid fa-circle-question"></i> Preguntas
-                        frecuentes</a></li>
-                <li><a href="contacto.html"><i class="fa-solid fa-envelopes-bulk"></i> Contacto</a></li>
+                <li>
+                    <a class="link__activo" href="productos.html">
+                        <i class="fa-solid fa-umbrella"></i> Productos
+                    </a>
+                </li>
+                <li>
+                    <a href="promociones.html">
+                        <i class="fa-solid fa-money-bill-1-wave"></i> Promociones
+                    </a>
+                </li>
+                <li>
+                    <a href="preguntas-frecuentes.html">
+                        <i class="fa-solid fa-circle-question"></i> Preguntas frecuentes
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <i class="fa-solid fa-envelopes-bulk"></i> Contacto
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="general__titulo sombra__violetaTexto">
+        <div class="titulo__general">
             <h2>LUMINOSOS</h2>
         </div>
 
         <section class="productos">
-
-            <div class="productos__tarjeta">
+            <div class="productos__item">
                 <img class="productos__foto" src="../resources/producto-1.png" alt="Foto del producto 1">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
+                    <div>
                         Bufanda LED
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
+                    <div class="productos__precio">
                         $ 2.500
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -57,16 +75,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-8.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-8.png" alt="Foto del producto 8">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Labial luminoso
+                    <div>
+                        Labial R
                     </div>
-                    <div class="productos__nombre sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 750
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -75,16 +93,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-3.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-3.png" alt="Foto del producto 3">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Lentes brillantes
+                    <div>
+                        Lentes LED
                     </div>
-                    <div class="productos__nombre sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 1.130
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -93,16 +111,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-2.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-2.png" alt="Foto del producto 2">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
+                    <div>
                         Cordones LED
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 1.130
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -110,25 +128,23 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <div class="general__titulo sombra__violetaTexto">
+        <div class="titulo__general">
             <h2>VARIOS</h2>
         </div>
 
         <section class="productos">
-
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-5.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-5.png" alt="Foto del producto 5">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Vaso yankee azul
+                    <div>
+                        Vaso Yankee A
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 300
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -137,16 +153,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-6.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-6.png" alt="Foto del producto 6">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Vaso bolichito
+                    <div>
+                        Vaso CHEBOL
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 750
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -155,16 +171,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-4.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-4.png" alt="Foto del producto 4">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Collar carioca
+                    <div>
+                        Collar
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 1.130
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -173,16 +189,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
+            <div class="productos__item">
                 <img class="productos__foto" src="../resources/producto-7.png" alt="Foto del producto 1">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Vaso yankee rojo
+                    <div>
+                        Vaso yankee R
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 300
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -192,22 +208,21 @@
             </div>
         </section>
 
-        <div class="general__titulo sombra__violetaTexto">
+        <div class="titulo__general">
             <h2>DESPEDIDAS</h2>
         </div>
 
         <section class="productos">
-
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-9.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-9.png" alt="Foto del producto 9">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Tul blanco quinceañera
+                    <div>
+                        Tul 15 B
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 2.500
+                    <div class="productos__precio">
+                        $ 750
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -216,16 +231,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-10.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-10.png" alt="Foto del producto 10">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Vincha rosada
+                    <div>
+                        Vincha R
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 1.750
+                    <div class="productos__precio">
+                        $ 750
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -234,16 +249,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-11.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-11.png" alt="Foto del producto 11">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Policia botón
+                    <div>
+                        Policia
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 500
+                    <div class="productos__precio">
+                        $ 950
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -252,16 +267,16 @@
                 </div>
             </div>
 
-            <div class="productos__tarjeta">
-                <img class="productos__foto" src="../resources/producto-12.png" alt="Foto del producto 1">
+            <div class="productos__item">
+                <img class="productos__foto" src="../resources/producto-12.png" alt="Foto del producto 12">
                 <div class="productos__info">
-                    <div class="productos__nombre sombra__violetaTexto">
-                        Gorra rosada
+                    <div>
+                        Gorra R
                     </div>
-                    <div class="productos__precio sombra__verdeTexto">
-                        $ 350
+                    <div class="productos__precio">
+                        $ 625
                     </div>
-                    <div class="productos__boton">
+                    <div>
                         <button class="boton">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                             COMPRAR
@@ -272,12 +287,11 @@
         </section>
     </main>
     <footer>
-        <div class="footer__tituloFoto sombra__violetaTexto">
+        <div class="footer__tituloFoto" data-aos="zoom-out">
             <h3>Cotillón El luminoso</h3>
             <img src="../resources/oso-cotillon.png" alt="Oso del cotillon">
         </div>
-
-        <div class="footer__info">
+        <div>
             <p>
                 Somos el Cotillón El Luminoso, ubicado en el centro de Córdoba.
             </p>
@@ -285,14 +299,16 @@
                 Estamos preparados para todo tipo de fiestas y festejos, no dudes en contactarte con un asesor.
             </p>
         </div>
-
-        <div class="footer__redes">
+        <div>
             <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
             <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
         </div>
-
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

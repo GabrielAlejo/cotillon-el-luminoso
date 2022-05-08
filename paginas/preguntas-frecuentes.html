@@ -1,148 +1,159 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../resources/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/nuevostyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Preguntas frecuentes - El luminoso</title>
 </head>
 
-<body>
+<body class="grid__container">
     <header>
-        <div class="header__logo">
-            <a href="index.html"><img src="../resources/logo-violeta.png" alt="Logo del cotillon" width="40px"></a>
+        <div class="header__logo" data-aos="zoom-in">
+            <a href="../index.html"><img src="../resources/logo-violeta.png" alt="Logo del cotillon"></a>
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="productos.html"><i class="fa-solid fa-umbrella"></i> Productos</a></li>
-                <li><a href="promociones.html"><i class="fa-solid fa-money-bill-1-wave"></i> Promociones</a>
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i> Inicio
+                    </a>
                 </li>
-                <li><a href="preguntas-frecuentes.html"><i class="fa-solid fa-circle-question"></i> Preguntas
-                        frecuentes</a></li>
-                <li><a href="contacto.html"><i class="fa-solid fa-envelopes-bulk"></i> Contacto</a></li>
+                <li>
+                    <a href="productos.html">
+                        <i class="fa-solid fa-umbrella"></i> Productos
+                    </a>
+                </li>
+                <li>
+                    <a href="promociones.html">
+                        <i class="fa-solid fa-money-bill-1-wave"></i> Promociones
+                    </a>
+                </li>
+                <li>
+                    <a class="link__activo" href="preguntas-frecuentes.html">
+                        <i class="fa-solid fa-circle-question"></i> Preguntas frecuentes
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <i class="fa-solid fa-envelopes-bulk"></i> Contacto
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="general__titulo sombra__violetaTexto">
-            <h2>PREGUNTAS FRECUENTES</h2>
-        </div>
-
-        <section>
-            <div class="contenedor">
-                <div class="contenedor__titulo">
-                    <h4><i class="fa-solid fa-crown"></i> ¿Quienes somos?</h4>
+        <section class="preguntasfrecuentes">
+            <div class="preguntasfrecuentes__item">
+                <div class="preguntasfrecuentes__pregunta">
+                    <h4>
+                        <i class="fa-solid fa-crown"></i> ¿Quienes somos?
+                    </h4>
                 </div>
-                <div class="contenedor__cuerpo contenedor__cuerpoFinal">
+                <div class="preguntasfrecuentes__respuesta">
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi doloremque repellat
-                        at sequi recusandae obcaecati laudantium dignissimos voluptatum veniam. Iste sequi omnis in
-                        dolore ratione, odio nihil facere eius?
-                        Atque tenetur qui cum rem delectus ullam possimus nobis optio est, recusandae, distinctio beatae
-                        exercitationem. Odit molestiae vero autem perferendis necessitatibus repudiandae voluptatibus
-                        sapiente quibusdam blanditiis ut, deserunt officiis ipsa.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis corrupti voluptatibus
+                        distinctio consectetur sequi necessitatibus obcaecati esse, est quibusdam, porro dicta quae
+                        saepe fuga ducimus culpa libero, vero repellendus alias!
+                        Nisi, assumenda. Sit necessitatibus culpa, dolor in provident neque incidunt cum perferendis
+                        repellendus, tempore sint mollitia nihil adipisci error nulla. Tenetur magnam distinctio,
+                        doloribus rem excepturi porro totam atque reprehenderit!
                     </p>
                 </div>
             </div>
+        </section>
 
-            <div class="contenedor">
-                <div class="contenedor__titulo">
-                    <h4><i class="fa-solid fa-location-dot"></i> ¿Donde estamos?</h4>
+        <section class="preguntasfrecuentes">
+            <div class="preguntasfrecuentes__item">
+                <div class="preguntasfrecuentes__pregunta">
+                    <h4>
+                        <i class="fa-solid fa-compass"></i> ¿Cual es nuestra visión?
+                    </h4>
                 </div>
-                <div class="contenedor__cuerpo donde__estamos contenedor__cuerpoFinal">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9629.31517809811!2d-64.1838824178893!3d-31.428531820315964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2902532f6cd%3A0xb3a9bb01c0545ca4!2sCotill%C3%B3n%20EL%20LUMINOSO!5e0!3m2!1ses-419!2sar!4v1650939558087!5m2!1ses-419!2sar"
-                        class="maps sombra__rojaCaja" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
-            <div class="contenedor">
-                <div class="contenedor__titulo">
-                    <h4><i class="fa-solid fa-compass"></i> ¿Cual es nuestra visión?</h4>
-                </div>
-                <div class="contenedor__cuerpo contenedor__cuerpoFinal">
+                <div class="preguntasfrecuentes__respuesta">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, dolor veniam! Deserunt
-                        tempora, enim similique quis reprehenderit itaque sunt aspernatur nam excepturi accusantium
-                        velit dolorem odio minima repellat dolorum magni?
-                        Qui iure explicabo nobis repudiandae. Aperiam et cumque tempora ipsa ducimus mollitia eligendi
-                        iure sint quis minus! Consectetur blanditiis delectus corrupti! Aut nemo ut saepe tempore et
-                        ipsum exercitationem ab.
-                        <span class="sombra__verdeTexto">Senim quasi nostrum quisquam aliquid nesciunt ea, vitae aliquam
-                            eveniet est rem dolor aut
-                            iste dolorem facilis consequatur, laboriosam consectetur nulla expedita optio. Adipisci
-                            laudantium aliquid facilis impedit magnam.</span>
-                        Saepe doloremque unde adipisci! Doloribus saepe labore suscipit! Asperiores suscipit unde
-                        exercitationem dicta eveniet magnam? Quos, inventore natus nesciunt temporibus non cupiditate
-                        sint repudiandae saepe ipsum corrupti quas a quasi.
-                        Fugit, adipisci soluta! Perferendis id ducimus a numquam molestiae dolorem culpa sed expedita
-                        tempore ipsum possimus eveniet sint, at voluptatibus autem delectus blanditiis minus
-                        reprehenderit pariatur fugit qui placeat aliquam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laboriosam pariatur nulla
+                        quidem veniam. Accusamus, nostrum nisi numquam adipisci facilis libero quo ducimus fugiat
+                        aspernatur similique ab rem autem maxime.
+                        Asperiores delectus sit recusandae laudantium facilis nihil possimus officia laborum earum
+                        totam, placeat, commodi natus expedita obcaecati. Animi, itaque. Totam voluptas omnis
+                        accusamus veritatis quo dolore, vel similique dolorem maxime.
+                        Atque, suscipit! Incidunt dolorem, qui molestias esse expedita neque amet a repellendus
+                        fugit, aspernatur culpa dolores officiis cupiditate consequuntur quibusdam commodi obcaecati
+                        quidem nulla voluptatum, quis quos velit! Aliquid, tempore!
+                        Tempora aliquam, vel praesentium, itaque laboriosam ratione nostrum perspiciatis at ut,
+                        quidem ex ipsam libero officia porro consequuntur veritatis! Dolorum quia accusamus earum
+                        repudiandae eveniet consequatur sequi laborum maxime error?
+                        Harum voluptatem laudantium consequuntur nesciunt magni beatae, odio corrupti fugit
+                        consequatur, dolorem quam ad impedit? Laboriosam at molestiae quasi nesciunt necessitatibus
+                        eum voluptas. Porro provident odit voluptas aperiam consequuntur at.
                     </p>
                 </div>
             </div>
+        </section>
 
-            <div class="contenedor">
-                <div class="contenedor__titulo">
-                    <h4><i class="fa-solid fa-cart-flatbed"></i> ¿Hacemos envíos?</h4>
+        <section class="preguntasfrecuentes">
+            <div class="preguntasfrecuentes__item">
+                <div class="preguntasfrecuentes__pregunta">
+                    <h4>
+                        <i class="fa-solid fa-cart-flatbed"></i> ¿Hacemos envíos?
+                    </h4>
                 </div>
-                <div class="contenedor__cuerpo contenedor__cuerpoFinal">
+                <div class="preguntasfrecuentes__respuesta">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nam. Ad fuga corrupti facere,
-                        voluptate similique harum asperiores assumenda consectetur deleniti natus qui accusamus est in?
-                        Dicta nostrum enim voluptatibus!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel ipsa autem. Optio eum
+                        numquam laudantium ex sequi voluptatibus earum natus, eos eligendi aliquam veritatis esse
+                        tenetur sit vel laborum.
                     </p>
                 </div>
             </div>
+        </section>
 
-            <div class="contenedor">
-                <div class="contenedor__titulo">
-                    <h4><i class="fa-solid fa-clock-rotate-left"></i> ¿Quieres devolver un producto por mal funcionamiento?</h4>
+        <section class="preguntasfrecuentes">
+            <div class="preguntasfrecuentes__item">
+                <div class="preguntasfrecuentes__pregunta">
+                    <h4>
+                        <i class="fa-solid fa-clock-rotate-left"></i> ¿Quieres devolver un producto por mal
+                        funcionamiento?
+                    </h4>
                 </div>
-                <div class="contenedor__cuerpo contenedor__cuerpoFinal">
+                <div class="preguntasfrecuentes__respuesta">
                     <p>
-                        <span class="sombra__violetaTexto">
-                            Senim quasi nostrum quisquam aliquid nesciunt ea, vitae aliquam eveniet est rem dolor aut
-                            iste dolorem facilis consequatur, laboriosam consectetur nulla expedita optio. Adipisci
-                            laudantium aliquid facilis impedit magnam.</span>
-                        Qui iure explicabo nobis repudiandae. Aperiam et cumque tempora ipsa ducimus mollitia eligendi
-                        iure sint quis minus! Consectetur blanditiis delectus corrupti! Aut nemo ut saepe tempore et
-                        ipsum exercitationem ab.
-                    </p>
-                    <ol>
-                        <li>Qui iure explicabo nobis repudiandae. Aperiam et cumque tempora ipsa ducimus mollitia
-                            eligendi
-                            iure sint quis minus!</li>
-                        <li>Consectetur blanditiis delectus corrupti! Aut nemo ut saepe tempore et
-                            ipsum exercitationem ab.</li>
-                        <li>At voluptatibus autem delectus blanditiis minus
-                            reprehenderit pariatur fugit qui placeat aliquam?</li>
-                    </ol>
-                    <p>
-                        Fugit, adipisci soluta! Perferendis id ducimus a numquam molestiae dolorem culpa sed expedita
-                        tempore ipsum possimus eveniet sint, at voluptatibus autem delectus blanditiis minus
-                        reprehenderit pariatur fugit qui placeat aliquam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cupiditate cumque accusamus saepe
+                        non quos autem sunt labore velit eum optio deleniti maiores, iusto, corporis blanditiis, quam
+                        quisquam ab delectus?
+                        Ratione error distinctio alias voluptatum. Officiis animi accusantium dicta consequatur debitis
+                        et cupiditate dolores maiores quasi veritatis, expedita facere necessitatibus eligendi est fugit
+                        quibusdam minus ad illum tenetur quia error?
+                        Ipsa, placeat fugiat sequi tempore aliquam quia! Magni rerum, sit ea distinctio voluptates
+                        quaerat error laudantium dignissimos eveniet? Vel commodi at sunt fugit, mollitia dolores!
+                        Laborum distinctio quas error architecto?
+                        Officiis ex quo nam error veritatis ut et enim soluta eum sed aliquam cumque voluptas quia
+                        laudantium a suscipit sit nemo repellendus nobis, dolorem pariatur molestiae fugit. Totam,
+                        reprehenderit doloribus.
+                        Veritatis maxime doloremque corporis hic excepturi, commodi consectetur. Ut totam odio nemo, eos
+                        at eveniet, quas reprehenderit impedit obcaecati voluptate nam facilis sint quam debitis, rem
+                        sed libero sequi culpa?
                     </p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer__tituloFoto sombra__violetaTexto">
+        <div class="footer__tituloFoto" data-aos="zoom-out">
             <h3>Cotillón El luminoso</h3>
             <img src="../resources/oso-cotillon.png" alt="Oso del cotillon">
         </div>
-
-        <div class="footer__info">
+        <div>
             <p>
                 Somos el Cotillón El Luminoso, ubicado en el centro de Córdoba.
             </p>
@@ -150,14 +161,16 @@
                 Estamos preparados para todo tipo de fiestas y festejos, no dudes en contactarte con un asesor.
             </p>
         </div>
-
-        <div class="footer__redes">
+        <div>
             <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
             <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
         </div>
-
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

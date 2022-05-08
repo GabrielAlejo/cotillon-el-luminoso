@@ -1,106 +1,132 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../resources/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/nuevostyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Contacto - El luminoso</title>
 </head>
 
-<body>
+<body class="grid__container">
     <header>
-        <div class="header__logo">
-            <a href="index.html"><img src="../resources/logo-violeta.png" alt="Logo del cotillon" width="40px"></a>
+        <div class="header__logo" data-aos="zoom-in">
+            <a href="../index.html"><img src="../resources/logo-violeta.png" alt="Logo del cotillon"></a>
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="productos.html"><i class="fa-solid fa-umbrella"></i> Productos</a></li>
-                <li><a href="promociones.html"><i class="fa-solid fa-money-bill-1-wave"></i> Promociones</a>
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i> Inicio
+                    </a>
                 </li>
-                <li><a href="preguntas-frecuentes.html"><i class="fa-solid fa-circle-question"></i> Preguntas
-                        frecuentes</a></li>
-                <li><a href="contacto.html"><i class="fa-solid fa-envelopes-bulk"></i> Contacto</a></li>
+                <li>
+                    <a href="productos.html">
+                        <i class="fa-solid fa-umbrella"></i> Productos
+                    </a>
+                </li>
+                <li>
+                    <a href="promociones.html">
+                        <i class="fa-solid fa-money-bill-1-wave"></i> Promociones
+                    </a>
+                </li>
+                <li>
+                    <a href="preguntas-frecuentes.html">
+                        <i class="fa-solid fa-circle-question"></i> Preguntas frecuentes
+                    </a>
+                </li>
+                <li>
+                    <a class="link__activo" href="contacto.html">
+                        <i class="fa-solid fa-envelopes-bulk"></i> Contacto
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="general__titulo sombra__violetaTexto">
-            <h2>CONTACTO</h2>
-        </div>
-
         <section class="contacto">
-            <form method="">
-                <div class="contenedor contenedor__corto">
-                    <div class="contenedor__titulo">
-                        <h4><i class="fa-solid fa-message"></i> ¡Mandanos un mensaje!</h4>
-                    </div>
-                    <div class="contenedor__cuerpo">
-
-                        <div class="contacto__campo">
-                            <label for="sNombre">Nombre</label>
-                            <input type="text" id="sNombre" placeholder=""></input>
-                        </div>
-
-                        <div class="contacto__campo">
-                            <label for="sEmail">Email</label>
-                            <input type="email" id="sEmail" placeholder=""></input>
-                        </div>
-
-                        <div class="contacto__campo">
-                            <label for="sAsunto">Asunto</label>
-                            <select id="sAsunto">
-                                <option value="" disabled selected>Seleccione un asunto</option>
-                                <option value="iConsulta">Consulta</option>
-                                <option value="iQueja">Queja</option>
-                                <option value="iOtro">Otro</option>
-                            </select>
-                        </div>
-
-                        <div class="contacto__campo">
-                            <label for="sMensaje">Mensaje</label>
-                            <textarea id="sMensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea>
-                        </div>
-                    </div>
-                    <div class="contenedor__pie contenedor__center">
-                        <input type="submit" class="boton" value="Enviar"></input>
-                    </div>
+            <div class="contacto__item">
+                <div class="contacto__titulo">
+                    <h4>
+                        <i class="fa-solid fa-paper-plane"></i> Envianos tu mensaje
+                    </h4>
                 </div>
-            </form>
-        </section>
+                <div class="contacto__cuerpo">
+                    <form action="">
+                        <div class="contacto__campo">
+                            <label>
+                                Nombre
+                            </label>
+                            <input type="text" placeholder="Nombre" />
+                        </div>
+                        <div class="contacto__campo">
+                            <label>
+                                Apellido
+                            </label>
+                            <input type="text" placeholder="Apellido" />
+                        </div>
+                        <div class="contacto__campo">
+                            <label>
+                                Email
+                            </label>
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="contacto__campo">
+                            <label>
+                                Mensaje
+                            </label>
+                            <textarea placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="contacto__campo">
+                            <button type="submit" class="boton">
+                                <i class="fa-solid fa-share-from-square"></i>
+                                ENVIAR
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-        <div class="contenedor">
-            <div class="contenedor__titulo">
-                <h4><i class="fa-solid fa-envelopes-bulk"></i> Nuestra información de contacto</h4>
+            <div class="contacto__item">
+                <div class="contacto__titulo">
+                    <h4>
+                        <i class="fa-solid fa-candy-cane"></i> Información útil
+                    </h4>
+                </div>
+                <div class="contacto__cuerpo">
+                    <p>
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22903.50995993856!2d-64.18949014063014!3d-31.424397904043712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3a9bb01c0545ca4!2sCotill%C3%B3n%20EL%20LUMINOSO!5e0!3m2!1ses-419!2sar!4v1651968219059!5m2!1ses-419!2sar"
+                        width="100%" height="335px" class="mapa" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-location-pin"></i> Dirección: Calle Libertadores, Madrid 912
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> Teléfono: 38709122018
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> Email: luminoso@soporte.com
+                    </p>
+                </div>
             </div>
-            <div class="contenedor__cuerpo contenedor__cuerpoFinal">
-                <p>
-                    <i class="fa-solid fa-map-location-dot"></i> Barrio Libertadores, calle Madrid 918
-                </p>
-                <p>
-                    <i class="fa-solid fa-phone"></i> (Celular) 387 522-7894
-                </p>
-                <p>
-                    <i class="fa-solid fa-envelope-circle-check"></i> cotillonelluminoso@gmail.com
-                </p>
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <div class="footer__tituloFoto sombra__violetaTexto">
+        <div class="footer__tituloFoto" data-aos="zoom-out">
             <h3>Cotillón El luminoso</h3>
             <img src="../resources/oso-cotillon.png" alt="Oso del cotillon">
         </div>
-
-        <div class="footer__info">
+        <div>
             <p>
                 Somos el Cotillón El Luminoso, ubicado en el centro de Córdoba.
             </p>
@@ -108,14 +134,16 @@
                 Estamos preparados para todo tipo de fiestas y festejos, no dudes en contactarte con un asesor.
             </p>
         </div>
-
-        <div class="footer__redes">
+        <div>
             <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
             <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
         </div>
-
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
