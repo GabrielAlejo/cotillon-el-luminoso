@@ -246,6 +246,18 @@ a {
     font-weight: 700;
 }
 
+.contacto__cuerpo select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #FC466B;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.contacto__cuerpo select, option {
+    font-weight: 700;
+}
+
 .contacto__campo textarea {
     padding: 0.5rem;
     margin-bottom: 1rem;
