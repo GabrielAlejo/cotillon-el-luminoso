@@ -11,7 +11,6 @@ body {
 header {
     background-color: black;
     text-transform: uppercase;
-    font-weight: 700;
 }
 
 main {
@@ -33,12 +32,6 @@ main {
     margin: 1rem 0rem 1rem 0rem;
 }
 
-.titulo__neon {
-    font-weight: bold;
-    color: black;
-    text-shadow: #FC466B 1px 0px 5px;
-}
-
 .carousel {
     border: 2px solid #FC466B;
     border-radius: 5px;
@@ -58,11 +51,6 @@ main {
 
 .card img {
     border-bottom: 2px solid #FC466B;
-}
-
-.card__product {
-    display: flex;
-    flex-direction: column;
 }
 
 .card__productPrecio {
@@ -91,6 +79,7 @@ textarea {
 
 .mapa {
     border: 1px solid #FC466B;
+    border-radius: 5px;
 }
 
 footer {
