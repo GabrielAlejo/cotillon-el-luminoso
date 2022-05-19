@@ -58,6 +58,38 @@ main {
     color: #0d9d00;
 }
 
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid #FC466B;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.accordion-button:hover {
+    color: #FC466B;
+}
+
+.accordion-button:active {
+    color: #FC466B;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: white;
+}
+
+.accordion-button:focus {
+    z-index: 0;
+    border-color: #FC466B;
+    box-shadow: none;
+}
+
 .form-control,
 .form-select {
     border: 1px solid #FC466B;
