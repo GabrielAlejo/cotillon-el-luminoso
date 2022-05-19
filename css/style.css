@@ -18,14 +18,10 @@ main {
     margin: 1rem 0rem 1rem 0rem;
 }
 
-/* Esto modifiqué viendolo desde el inspeccionar elemento */
-
 .row {
     --bs-gutter-x: 1rem;
     --bs-gutter-y: 1rem;
 }
-
-/* --- */
 
 .titulo__general {
     background: linear-gradient(90deg, rgba(252, 70, 106, 0.100) 20%, white 50%, rgba(65, 96, 251, 0.100) 80%);
@@ -115,104 +111,3 @@ footer a {
 footer a:hover {
     color: #ff00d4;
 }
-
-/* MEDIA QUERIE, actualmente no necesito, por eso las comento
-@media (min-width: 761px) and (max-width: 950px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header ul {
-        flex-direction: column;
-    }
-
-    main {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .promociones__foto {
-        width: 22rem;
-    }
-
-    .promociones__gif {
-        max-width: 100%;
-    }
-
-    .contacto__item {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 541px) and (max-width: 760px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header ul {
-        flex-direction: column;
-    }
-
-    main {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .promociones__foto {
-        width: 30rem;
-    }
-
-    .promociones__gif {
-        max-width: 100%;
-    }
-
-    .contacto__item {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 540px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header ul {
-        flex-direction: column;
-    }
-
-    main {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .productos__foto {
-        width: 8.5rem;
-    }
-
-    .promociones__foto {
-        width: 18rem;
-    }
-
-    .promociones__gif {
-        max-width: 100%;
-    }
-
-    .contacto__item {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-} */
