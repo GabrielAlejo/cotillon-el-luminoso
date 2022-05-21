@@ -37,6 +37,11 @@ main {
     border-radius: 5px;
 }
 
+.card__product {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .card-header {
     background-color: white;
     border-bottom: 2px solid #FC466B;
@@ -91,6 +96,10 @@ main {
     box-shadow: none;
 }
 
+.pregunta__icon {
+    margin-right: 3px;
+}
+
 .form-control,
 .form-select {
     border: 1px solid #FC466B;
@@ -132,4 +141,18 @@ footer a {
 
 footer a:hover {
     color: #ff00d4;
+}
+
+@media (min-width: 220px) and (max-width: 400px) {
+    .card__product {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pregunta__icon {
+        font-size: 2rem;
+        display: none;
+    }
 }
