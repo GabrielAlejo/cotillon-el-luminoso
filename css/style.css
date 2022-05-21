@@ -47,6 +47,7 @@ main {
 
 .card {
     border: none;
+    height: 100%;
 }
 
 .card img {
