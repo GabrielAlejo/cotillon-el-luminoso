@@ -1,0 +1,128 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'media';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font-principal;
+}
+
+body {
+    background: linear-gradient(90deg, $rosa 0%, $celeste 100%);
+}
+
+
+main {
+    margin: 1rem 0rem 1rem 0rem;
+
+    .row {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem;
+    }
+
+    .titulo__general {
+        background: linear-gradient(90deg, rgba(252, 70, 106, 0.100) 20%, $blanco 50%, rgba(65, 96, 251, 0.100) 80%);
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    .btn__rosa {
+        background-color: $rosa;
+        color: $blanco;
+
+        &:hover {
+            background-color: $negro;
+            color: $blanco;
+        }
+    }
+
+    .carousel {
+        border: 2px solid $rosa;
+        border-radius: 5px;
+    }
+
+    .card {
+        border: none;
+        height: 100%;
+
+        & img {
+            border-bottom: 2px solid $rosa;
+        }
+
+        &-header {
+            background-color: $blanco;
+            border-bottom: 2px solid $rosa;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__productPrecio {
+            font-weight: bold;
+            color: $verde;
+        }
+    }
+
+    .accordion {
+        &-item {
+            border: none;
+        }
+
+        &-button {
+            background-color: $blanco;
+            border: none;
+            border-bottom: 2px solid $rosa;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &-button:hover {
+            color: $rosa;
+        }
+
+        &-button:active {
+            color: $rosa;
+        }
+
+        &-button:focus {
+            z-index: 0;
+            border-color: $rosa;
+            box-shadow: none;
+        }
+
+        &-button:not(.collapsed) {
+            color: $rosa;
+            background-color: $blanco;
+        }
+    }
+
+    form {
+        textarea {
+            resize: none;
+        }
+
+        .form {
+
+            &-control,
+            &-select {
+                border: 1px solid $rosa;
+            }
+        }
+    }
+
+    .mapa {
+        border: 1px solid $rosa;
+        border-radius: 5px;
+    }
+
+    .pregunta__icon {
+        margin-right: 4px;
+    }
+}

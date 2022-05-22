@@ -1,158 +1,113 @@
+header {
+  background-color: #101010;
+  text-transform: uppercase; }
+  header ul li {
+    padding: 1rem; }
+  header a {
+    color: #CCCCCC;
+    transition-duration: 0.2s;
+    text-transform: uppercase;
+    text-decoration: none; }
+    header a:visited {
+      color: #CCCCCC; }
+    header a:hover {
+      color: #FF00D4; }
+  header .link__activo {
+    font-weight: bold; }
+
+footer {
+  background-color: #101010;
+  color: #FFFFFF;
+  padding: 2rem; }
+  footer a {
+    color: #FFFFFF;
+    display: block;
+    padding: 1rem;
+    transition-duration: 0.2s;
+    text-transform: uppercase;
+    text-decoration: none; }
+    footer a:hover {
+      color: #FF00D4; }
+
+@media (min-width: 220px) and (max-width: 990px) {
+  header ul li {
+    padding: 0.5rem; } }
+
+@media (min-width: 220px) and (max-width: 990px) and (max-width: 400px) {
+  .pregunta__icon {
+    font-size: 2rem;
+    display: none; } }
+
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-}
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif; }
 
 body {
-    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-}
-
-header {
-    background-color: black;
-    text-transform: uppercase;
-}
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); }
 
 main {
-    margin: 1rem 0rem 1rem 0rem;
-}
-
-.row {
+  margin: 1rem 0rem 1rem 0rem; }
+  main .row {
     --bs-gutter-x: 1rem;
-    --bs-gutter-y: 1rem;
-}
-
-.titulo__general {
-    background: linear-gradient(90deg, rgba(252, 70, 106, 0.100) 20%, white 50%, rgba(65, 96, 251, 0.100) 80%);
+    --bs-gutter-y: 1rem; }
+  main .titulo__general {
+    background: linear-gradient(90deg, rgba(252, 70, 106, 0.1) 20%, #FFFFFF 50%, rgba(65, 96, 251, 0.1) 80%);
     text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0.5rem;
-    margin: 1rem 0rem 1rem 0rem;
-}
-
-.carousel {
+    margin: 1rem 0rem 1rem 0rem; }
+  main .btn__rosa {
+    background-color: #FC466B;
+    color: #FFFFFF; }
+    main .btn__rosa:hover {
+      background-color: #101010;
+      color: #FFFFFF; }
+  main .carousel {
     border: 2px solid #FC466B;
-    border-radius: 5px;
-}
-
-.card__product {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.card-header {
-    background-color: white;
-    border-bottom: 2px solid #FC466B;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.card {
+    border-radius: 5px; }
+  main .card {
     border: none;
-    height: 100%;
-}
-
-.card img {
-    border-bottom: 2px solid #FC466B;
-}
-
-.card__productPrecio {
-    font-weight: bold;
-    color: #0d9d00;
-}
-
-.accordion-item {
-    border: none;
-}
-
-.accordion-button {
-    background-color: white;
+    height: 100%; }
+    main .card img {
+      border-bottom: 2px solid #FC466B; }
+    main .card-header {
+      background-color: #FFFFFF;
+      border-bottom: 2px solid #FC466B;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase; }
+    main .card__productPrecio {
+      font-weight: bold;
+      color: #0D9D00; }
+  main .accordion-item {
+    border: none; }
+  main .accordion-button {
+    background-color: #FFFFFF;
     border: none;
     border-bottom: 2px solid #FC466B;
     font-size: 1.2rem;
     font-weight: 700;
-    text-transform: uppercase;
-}
-
-.accordion-button:hover {
-    color: #FC466B;
-}
-
-.accordion-button:active {
-    color: #FC466B;
-}
-
-.accordion-button:not(.collapsed) {
-    color: #000000;
-    background-color: white;
-}
-
-.accordion-button:focus {
+    text-transform: uppercase; }
+  main .accordion-button:hover {
+    color: #FC466B; }
+  main .accordion-button:active {
+    color: #FC466B; }
+  main .accordion-button:focus {
     z-index: 0;
     border-color: #FC466B;
-    box-shadow: none;
-}
-
-.pregunta__icon {
-    margin-right: 3px;
-}
-
-.form-control,
-.form-select {
+    box-shadow: none; }
+  main .accordion-button:not(.collapsed) {
+    color: #FC466B;
+    background-color: #FFFFFF; }
+  main form textarea {
+    resize: none; }
+  main form .form-control, main form .form-select {
+    border: 1px solid #FC466B; }
+  main .mapa {
     border: 1px solid #FC466B;
-}
-
-textarea {
-    resize: none;
-}
-
-.btn__rosa {
-    background-color: #FC466B;
-    color: white;
-}
-
-.btn__rosa:hover {
-    background-color: black;
-    color: white;
-}
-
-.mapa {
-    border: 1px solid #FC466B;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 2rem;
-}
-
-footer a {
-    color: white;
-    display: block;
-    padding: 1rem;
-    transition-duration: 0.2s;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #ff00d4;
-}
-
-@media (min-width: 220px) and (max-width: 400px) {
-    .card__product {
-        margin-left: 0;
-        margin-right: 0;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pregunta__icon {
-        font-size: 2rem;
-        display: none;
-    }
-}
+    border-radius: 5px; }
+  main .pregunta__icon {
+    margin-right: 4px; }

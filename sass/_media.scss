@@ -1,0 +1,14 @@
+@media (min-width: 220px) and (max-width: 990px) {
+    header {
+        & ul li {
+            padding: 0.5rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .pregunta__icon {
+            font-size: 2rem;
+            display: none;
+        }
+    }
+}
