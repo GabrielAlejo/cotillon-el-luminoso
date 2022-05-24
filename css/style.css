@@ -91,17 +91,17 @@ main {
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase; }
-  main .accordion-button:hover {
-    color: #FC466B; }
-  main .accordion-button:active {
-    color: #FC466B; }
-  main .accordion-button:focus {
-    z-index: 0;
-    border-color: #FC466B;
-    box-shadow: none; }
-  main .accordion-button:not(.collapsed) {
-    color: #FC466B;
-    background-color: #FFFFFF; }
+    main .accordion-button:hover {
+      color: #FC466B; }
+    main .accordion-button:active {
+      color: #FC466B; }
+    main .accordion-button:focus {
+      z-index: 0;
+      border-color: #FC466B;
+      box-shadow: none; }
+    main .accordion-button:not(.collapsed) {
+      color: #FC466B;
+      background-color: #FFFFFF; }
   main form textarea {
     resize: none; }
   main form .form-control, main form .form-select {

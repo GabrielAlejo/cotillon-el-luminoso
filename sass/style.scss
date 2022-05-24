@@ -13,7 +13,6 @@ body {
     background: linear-gradient(90deg, $rosa 0%, $celeste 100%);
 }
 
-
 main {
     margin: 1rem 0rem 1rem 0rem;
 
@@ -81,25 +80,25 @@ main {
             font-size: 1.2rem;
             font-weight: 700;
             text-transform: uppercase;
-        }
 
-        &-button:hover {
-            color: $rosa;
-        }
+            &:hover {
+                color: $rosa;
+            }
 
-        &-button:active {
-            color: $rosa;
-        }
+            &:active {
+                color: $rosa;
+            }
 
-        &-button:focus {
-            z-index: 0;
-            border-color: $rosa;
-            box-shadow: none;
-        }
+            &:focus {
+                z-index: 0;
+                border-color: $rosa;
+                box-shadow: none;
+            }
 
-        &-button:not(.collapsed) {
-            color: $rosa;
-            background-color: $blanco;
+            &:not(.collapsed) {
+                color: $rosa;
+                background-color: $blanco;
+            }
         }
     }
 
