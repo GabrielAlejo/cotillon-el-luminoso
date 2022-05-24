@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'helper';
 @import 'media';
 
 * {
@@ -55,11 +56,7 @@ main {
         }
 
         &-header {
-            background-color: $blanco;
-            border-bottom: 2px solid $rosa;
-            font-size: 1.2rem;
-            font-weight: 700;
-            text-transform: uppercase;
+            @include head($blanco, 2px, $rosa, 1.2rem, 700);
         }
 
         &__productPrecio {
@@ -74,12 +71,7 @@ main {
         }
 
         &-button {
-            background-color: $blanco;
-            border: none;
-            border-bottom: 2px solid $rosa;
-            font-size: 1.2rem;
-            font-weight: 700;
-            text-transform: uppercase;
+            @include head($blanco, 2px, $rosa, 1.2rem, 700);
 
             &:hover {
                 color: $rosa;

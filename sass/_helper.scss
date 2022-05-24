@@ -1,0 +1,7 @@
+@mixin head($bgColor, $bbSize, $bbColor, $fSize, $fWeight) {
+    background-color: $bgColor;
+    border-bottom: $bbSize solid $bbColor;
+    font-size: $fSize;
+    font-weight: $fWeight;
+    text-transform: uppercase;
+}

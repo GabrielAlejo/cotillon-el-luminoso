@@ -86,7 +86,6 @@ main {
     border: none; }
   main .accordion-button {
     background-color: #FFFFFF;
-    border: none;
     border-bottom: 2px solid #FC466B;
     font-size: 1.2rem;
     font-weight: 700;
