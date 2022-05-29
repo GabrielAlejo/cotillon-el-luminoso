@@ -34,7 +34,7 @@ footer {
     padding: 0.5rem; } }
 
 @media (min-width: 220px) and (max-width: 990px) and (max-width: 400px) {
-  .pregunta__icon {
+  .icon {
     font-size: 2rem;
     display: none; } }
 
@@ -108,5 +108,5 @@ main {
   main .mapa {
     border: 1px solid #FC466B;
     border-radius: 5px; }
-  main .pregunta__icon {
+  main .icon {
     margin-right: 4px; }
